@@ -1,0 +1,31 @@
+/*
+ Theme Name:   Worldscape
+ Template:     pt-magazine
+ Theme URI:    http://example.com/worldscape/
+ Description:  PT Magazine Child Theme
+ Author:       Adrian Luk
+ Author URI:   http://adrianluk.com
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  worldscape
+*/
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap-grid.min.css);
+/*@import url("../pt-magazine/style.css");*/
+
+.main-news-full-row.main-news-col-3 .news-post{
+    float: left;
+}
+
+.main-news-full-row.main-news-col-3 .news-post:after{
+    clear:both;
+}
+
+figure.post-image{
+    margin: 0;
+}
+figure.post-image img{
+    width: 100%;
+}
+
