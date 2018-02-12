@@ -21,6 +21,8 @@ get_header(); ?>
 
 	<?php
 
+
+
 	$slider_args = array(
 		                'posts_per_page' 		=> 5,
 		                'no_found_rows' 		=> true,
