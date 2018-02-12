@@ -17,6 +17,7 @@ if ( ! is_page_template( 'templates/home.php' )  ) {
 }
 
 get_header(); ?>
+<section class="main-news-section">
 <div class="main-news-left <?php echo $full_slider_class; ?>">
 
 	<?php
@@ -217,7 +218,9 @@ $highlighted_cat = pt_magazine_get_option( 'highlighted_news_category' );
 
 	endif; ?>
 
-</div><!-- .main-news-right -->
+</div><!-- .main-news-full-row -->
+
+</section>
 
 	<div id="primary" class="content-area">
 
