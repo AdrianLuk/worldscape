@@ -28,4 +28,26 @@ figure.post-image{
 figure.post-image img{
     width: 100%;
 }
+.main-news-left img{
+    max-height: 455px;
+}
 
+.slick-prev, .slick-next{
+    bottom: 13%;
+}
+
+.main-news-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-section-row{
+    display: flex;
+}
+
+@media screen and (max-width: 900px){
+    .main-news-right{
+        display: none;
+    }
+}

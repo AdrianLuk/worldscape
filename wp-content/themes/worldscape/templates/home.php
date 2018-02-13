@@ -18,7 +18,7 @@ if ( ! is_page_template( 'templates/home.php' )  ) {
 
 get_header(); ?>
 <section class="main-news-section">
-<div style="display:flex;" class="news-section-row">
+<div class="news-section-row">
 <div class="main-news-left <?php echo $full_slider_class; ?>">
 
 	<?php
