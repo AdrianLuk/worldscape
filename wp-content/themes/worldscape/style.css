@@ -46,6 +46,9 @@ figure.post-image img{
     display: flex;
 }
 
+.bottom-header{
+    padding: 0;
+}
 @media screen and (max-width: 900px){
     .main-news-right{
         display: none;
