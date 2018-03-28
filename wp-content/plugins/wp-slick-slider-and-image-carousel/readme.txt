@@ -2,7 +2,7 @@
 Contributors: wponlinesupport, anoopranawat 
 Tags: wponlinesupport, slick, image slider, slick slider, slick image slider, slider, image slider, header image slider, responsive image slider, responsive content slider, carousel, image carousel, carousel slider, content slider, coin slider, touch slider, text slider, responsive slider, responsive slideshow, Responsive Touch Slider, wp slider, wp image slider, wp header image slider, photo slider, responsive photo slider  
 Requires at least: 3.1
-Tested up to: 4.9
+Tested up to: 4.9.4
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,7 @@ Display multiple slick image slider and carousel using shortcode with category. 
 
 It uses A custom post type and taxonomy to create a slider, with almost unlimited options and support for multiple sliders on any page. You can also display image slider on your website header.
 
-We have added 5 designs for slider and 1 design for carousel. You can find all designs under Slick Slider -> Slider Designs. Just copy the shortcode of design that you like and use.
+We have added 5 designs for slider and 1 design for carousel. You can find all designs on our demo website. Just copy the shortcode of design that you like and use.
 
 Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) | [PRO DEMO and Features](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image-carousel/) for additional information.
 
@@ -118,6 +118,9 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 
 == Changelog ==
 
+= 1.4 (10/3/2018) =
+* [*] Fixed  some css issues
+
 = 1.3.4 (04/10/2017) =
 * [*] Fixed all responsive issues and checked many mobile devices.
 * [*] If you are using any cache plugin, please clear your cacheing after plugin updates
@@ -193,6 +196,9 @@ Check [DEMO](https://www.wponlinesupport.com/wp-plugin/wp-slick-slider-and-image
 
 
 == Upgrade Notice ==
+
+= 1.4 (10/3/2018) =
+* [*] Fixed  some css issues
 
 = 1.3.4 (04/10/2017) =
 * [*] Fixed all responsive issues and checked many mobile devices.

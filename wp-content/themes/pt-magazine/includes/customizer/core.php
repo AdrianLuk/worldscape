@@ -61,6 +61,7 @@ if ( ! function_exists( 'pt_magazine_get_default_theme_options' ) ) :
 
 		// general settings.
 		$defaults['site_layout']  				= 'full-width';
+		$defaults['enable_sticky_sidebar']      = false;
 
 		// Header.
 		$defaults['show_top_header'] 			= true;

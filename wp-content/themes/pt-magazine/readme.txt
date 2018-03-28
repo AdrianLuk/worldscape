@@ -2,8 +2,8 @@
 
 Contributors: promenadepro
 Requires at least: 4.5
-Tested up to: 4.9
-Stable tag: 1.0.7
+Tested up to: 4.9.4
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,10 @@ PT Magazine WordPress Theme, Copyright (C) 2017, Promenade Themes
 PT Magazine is distributed under the terms of the GNU GPL
 
 == Changelog ==
+
+= 1.0.8 ( 15/March/2018 ) =
+* Fixed space issue of main navigation in Edge and IE browsers
+* Sticky sidebar added
 
 = 1.0.7 ( 06/Dec/2017 ) =
 * Layout image added in news widgets 
@@ -90,6 +94,9 @@ License: [MIT](http://opensource.org/licenses/MIT)
 
 - Breadcrumb Trail 
 (C) 2008 - 2015, Justin Tadlock (http://themehybrid.com/plugins/breadcrumb-trail/), [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
+
+- Theia Sticky Sidebar
+(C) 2013 - 2016, WeCodePixels (https://github.com/WeCodePixels/theia-sticky-sidebar), [MIT](http://opensource.org/licenses/MIT)
 
 == Images ==
 
