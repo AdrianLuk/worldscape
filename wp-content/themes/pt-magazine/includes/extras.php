@@ -51,6 +51,15 @@ function pt_magazine_body_classes( $classes ) {
 		$classes[] = 'site-layout-boxed';
 
 	}
+
+	// Add class for sticky sidebar.
+	$sticky_sidebar = pt_magazine_get_option( 'enable_sticky_sidebar' );
+
+	if( 1 == $sticky_sidebar ){
+
+		$classes[] = 'global-sticky-sidebar';
+
+	}
 	
 	return $classes;
 }

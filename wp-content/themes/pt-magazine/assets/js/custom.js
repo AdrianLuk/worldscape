@@ -53,6 +53,14 @@
 			return false;
 		});
 
+		//sticky sidebar
+
+		var main_body_ref = $("body");
+		
+		if( main_body_ref.hasClass( 'global-sticky-sidebar' ) ){
+			$( '#primary, #sidebar-primary' ).theiaStickySidebar();
+		}
+
 	});
 
 	/* Side bar custom tabs */

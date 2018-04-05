@@ -82,6 +82,22 @@ $wp_customize->add_control( 'theme_options[site_layout]',
 	)
 );
 
+// Setting enable_sticky_sidebar.
+$wp_customize->add_setting( 'theme_options[enable_sticky_sidebar]',
+	array(
+		'default'           => $default['enable_sticky_sidebar'],
+		'sanitize_callback' => 'pt_magazine_sanitize_checkbox',
+	)
+);
+$wp_customize->add_control( 'theme_options[enable_sticky_sidebar]',
+	array(
+		'label'    			=> esc_html__( 'Enable Sticky Sidebar', 'pt-magazine' ),
+		'section'  			=> 'section_layout',
+		'type'     			=> 'checkbox',
+		'priority' 			=> 100,
+	)
+);
+
 // Header Section.
 $wp_customize->add_section( 'section_header',
 	array(

@@ -4,7 +4,7 @@ Theme URI: https://promenadethemes.com/downloads/pt-magazine/
 Author: Promenade Themes
 Author URI: https://promenadethemes.com
 Description: PT Magazine is modern and perfectly crafted responsive theme suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online magazines, newsportals and any creative sites. This SEO friendly free magazine theme is fast, secure and perfectly suitable for topics like business, fashion, technology, politics, sports, health, travel or anything else. Find video instructions at https://www.youtube.com/watch?v=y3hQmkMHbvA&list=PL-Ic437QwxQ8pBxfHsldZMQiHLvoEYmSS
-Version: 1.0.7
+Version: 1.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: pt-magazine
@@ -2241,7 +2241,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .home-icon a {
-    padding: 17px 15px;
+    padding:  17px 15px 18px 15px;
     color: #fff;
     float: left;
     line-height: 1;

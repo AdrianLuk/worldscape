@@ -74,6 +74,16 @@ $config = array(
 			'recommended_actions' => false,
 			'is_new_tab'          => false,
 		),
+
+		array(
+			'title'        		  	=> esc_html__( 'Youtube Video Tutorials', 'pt-magazine' ),
+			'text'         			=> esc_html__( 'Please check our youtube channel for video instructions of PT Magazine setup and customization.', 'pt-magazine' ),
+			'button_label' 			=> esc_html__( 'Video Tutorials', 'pt-magazine' ),
+			'button_link'  			=> 'https://www.youtube.com/watch?v=y3hQmkMHbvA&list=PL-Ic437QwxQ8pBxfHsldZMQiHLvoEYmSS',
+			'is_button'    			=> false,
+			'recommended_actions' 	=> false,
+			'is_new_tab'   			=> true,
+		),
 	),
 
 	// Recommended actions.

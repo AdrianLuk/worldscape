@@ -182,6 +182,15 @@ function pt_magazine_scripts() {
 
 	wp_enqueue_script( 'jquery-meanmenu', get_template_directory_uri() . '/assets/third-party/meanmenu/jquery.meanmenu.js', array('jquery'), '2.0.2', true );
 
+	// Add script for sticky sidebar.
+	$sticky_sidebar = pt_magazine_get_option( 'enable_sticky_sidebar' );
+
+	if( 1 == $sticky_sidebar ){
+
+		wp_enqueue_script( 'jquery-theia-sticky-sidebar', get_template_directory_uri() . '/assets/third-party/theia-sticky-sidebar/theia-sticky-sidebar.min.js', array('jquery'), '1.0.7', true );
+
+	}
+
 	wp_enqueue_script( 'pt-magazine-custom', get_template_directory_uri() . '/assets/js/custom.js', array( 'jquery' ), '1.0.5', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
