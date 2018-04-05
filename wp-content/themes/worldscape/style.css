@@ -14,43 +14,45 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap-grid.min.css);
 /*@import url("../pt-magazine/style.css");*/
 
-.main-news-full-row.main-news-col-3 .news-post{
+.main-news-full-row.main-news-col-4 .news-post {
     float: left;
+    padding: 0;
 }
 
-.main-news-full-row.main-news-col-3 .news-post:after{
-    clear:both;
+.main-news-full-row.main-news-col-4 .news-post:after {
+    clear: both;
 }
 
-figure.post-image{
+figure.post-image {
     margin: 0;
 }
-figure.post-image img{
+figure.post-image img {
     width: 100%;
 }
-.main-news-left img{
+.main-news-left img {
     max-height: 455px;
 }
 
-.slick-prev, .slick-next{
+.slick-prev,
+.slick-next {
     bottom: 13%;
 }
 
-.main-news-right{
+/* .main-news-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
 
-.news-section-row{
+.news-section-row {
     display: flex;
 }
 
-.bottom-header{
+.bottom-header {
     padding: 0;
 }
-@media screen and (max-width: 900px){
-    .main-news-right{
+@media screen and (max-width: 900px) {
+    .main-news-right {
         display: none;
     }
 }
