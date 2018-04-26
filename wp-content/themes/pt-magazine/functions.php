@@ -219,4 +219,4 @@ function pt_magazine_admin_scripts( $hook ) {
 add_action( 'admin_enqueue_scripts', 'pt_magazine_admin_scripts' );
 
 // Load main file.
-require_once trailingslashit( get_template_directory() ) . '/includes/main.php';
+// require_once trailingslashit( get_template_directory() ) . '/includes/main.php';

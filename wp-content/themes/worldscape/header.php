@@ -39,7 +39,7 @@
 		*
 		* @hooked pt_magazine_before_header_action - 10
 		*/
-		// do_action( 'pt_magazine_before_header' );
+		do_action( 'pt_magazine_before_header' );
 
 		/**
 		* Hook - pt_magazine_header.

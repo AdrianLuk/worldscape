@@ -11,12 +11,25 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  worldscape
 */
-@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap-grid.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
 /*@import url("../pt-magazine/style.css");*/
 
+li {
+    line-height: 24px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1440px;
+    }
+}
 .main-news-full-row.main-news-col-4 .news-post {
     float: left;
     padding: 0;
+    border: 1px solid white;
 }
 
 .main-news-full-row.main-news-col-4 .news-post:after {
@@ -24,17 +37,16 @@
 }
 
 .post-content {
-    opacity: 0;
-    transition: all 0.2s;
-}
-.news-post:hover .post-content {
     opacity: 1;
+    /* transition: all 0.2s; */
 }
-.overlay a:before {
+/* .news-post:hover .post-content {
+    opacity: 1;
+} */
+/* .overlay a:before {
     background: none;
-}
-
-.news-post:hover .overlay a:before {
+} */
+.overlay a:before {
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.1) 0%,
@@ -43,6 +55,15 @@
         rgba(0, 0, 0, 0.75) 100%
     );
 }
+/* .news-post:hover .overlay a:before {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.15) 12%,
+        rgba(0, 0, 0, 0.73) 97%,
+        rgba(0, 0, 0, 0.75) 100%
+    );
+} */
 figure.post-image {
     margin: 0;
 }
@@ -75,4 +96,45 @@ figure.post-image img {
     .main-news-right {
         display: none;
     }
+}
+#comments {
+    display: block;
+}
+/* @media screen and (max-width: 1050px) {
+    #site-navigation ul {
+        flex-direction: column;
+    }
+}
+#site-navigation ul {
+    display: flex;
+    justify-content: space-around;
+}
+#site-navigation ul li a {
+    text-decoration: none;
+}
+#site-navigation ul .sub-menu {
+    flex-direction: column;
+} */
+#primary-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1050px) {
+    #primary-menu {
+        flex-direction: column;
+    }
+}
+a.mean-expand {
+    line-height: 26px !important;
+    z-index: 9999999 !important;
+}
+.mean-container .mean-nav ul li li a {
+    opacity: 0.9 !important;
+}
+#primary-menu {
+    margin: auto;
+}
+h1 {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
