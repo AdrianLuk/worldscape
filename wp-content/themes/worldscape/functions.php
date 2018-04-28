@@ -20,6 +20,7 @@ add_theme_support( 'infinite-scroll', array(
     'footer'    => 'page',
 ) );
 
+//Changed login logo from wordpress logo to site logo
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
@@ -34,12 +35,28 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
+//Changed link on login page to point to home page
 function my_login_logo_url() {
     return home_url();
 }
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 
+//Changed title of login logo url ie. text when logo is hovered
 function my_login_logo_url_title() {
     return 'Worldscape 360';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+//Redirect users back to homepage after logging out
+add_action('wp_logout','auto_redirect_after_logout');
+function auto_redirect_after_logout(){
+wp_redirect( home_url() );
+exit();
+}
+
+//Change howdy to custom message
+function howdy_message($translated_text, $text, $domain) {
+$new_message = str_replace('Howdy', 'Welcome', $text);
+return $new_message;
+}
+add_filter('gettext', 'howdy_message', 10, 3);
