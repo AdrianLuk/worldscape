@@ -66,7 +66,7 @@ $highlighted_cat = pt_magazine_get_option( 'highlighted_news_category' );
 	                    </figure><!-- .post-image -->
 
 	                    <div class="post-content">
-							<span class="posted-date"><?php echo esc_html( get_the_date() ); ?></span>
+							<!-- <span class="posted-date"><?php echo esc_html( get_the_date() ); ?></span> -->
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	                    </div><!-- .post-content -->
 	                </div>
