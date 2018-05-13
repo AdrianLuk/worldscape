@@ -521,7 +521,7 @@ function wp_lostpassword_url( $redirect = '' ) {
  * @param bool   $echo   Default to echo and not return the link.
  * @return string|void String when retrieving.
  */
-function wp_register( $before = '<li>', $after = '</li>', $echo = true ) {
+function wp_register( $before = '', $after = '', $echo = true ) {
 	if ( ! is_user_logged_in() ) {
 		if ( get_option('users_can_register') )
 			$link = $before . '<a href="' . esc_url( wp_registration_url() ) . '">' . __('Register') . '</a>' . $after;

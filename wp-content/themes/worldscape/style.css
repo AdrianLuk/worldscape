@@ -141,3 +141,26 @@ h1 {
 .top-header {
     background-color: #4b80b0;
 }
+.top-header .top-header-content {
+    float: none;
+    display: flex;
+    justify-content: space-between;
+}
+.top-header .top-header-content .top-info-left {
+    width: 100%;
+}
+.top-header .top-header-content .top-info-left .left {
+    float: none !important;
+}
+.top-header .top-header-content .top-info-right {
+    width: 100%;
+}
+.top-header .top-header-content .top-info-right div {
+    margin: 0 10px;
+}
+.top-header .top-header-content .top-info-right div a {
+    color: #fff;
+}
+.top-header .top-header-content .top-info-right .right {
+    float: none !important;
+}

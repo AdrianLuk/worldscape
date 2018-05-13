@@ -98,8 +98,8 @@ if ( ! function_exists( 'pt_magazine_top_header_action' ) ) :
 
                     </div>
 
-                    <div class="top-info-right right">
-
+                    <div class="top-info-right right d-flex justify-content-end">
+                        
                         <?php 
                         if( 'current-date' === $top_right_type ) {
                             
@@ -110,7 +110,7 @@ if ( ! function_exists( 'pt_magazine_top_header_action' ) ) :
                             do_action( 'pt_magazine_top_header_menu' );
 
                         }else{ ?>
-
+                         
                             <div class="social-widgets">
 
                                 <?php the_widget( 'PT_Magazine_Social_Widget' ); ?>
@@ -120,7 +120,9 @@ if ( ! function_exists( 'pt_magazine_top_header_action' ) ) :
                             <?php
 
                         } ?>
-
+                            <div class="text-white"><a href="/submit-an-article">Submit an Article</a></div>
+                           <div class="text-white"><?php wp_register(); ?></div>
+			            <div class="text-white"><?php wp_loginout(); ?></div>
                     </div>
 
                 </div><!-- .top-header-content -->   

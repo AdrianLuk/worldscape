@@ -54,9 +54,25 @@ wp_redirect( home_url() );
 exit();
 }
 
+// Redirect users back to homepage after logging in
+add_action('wp_login','auto_redirect_after_login');
+function auto_redirect_after_login(){
+wp_redirect( home_url() );
+exit();
+}
+
 //Change howdy to custom message
 function howdy_message($translated_text, $text, $domain) {
 $new_message = str_replace('Howdy', 'Welcome', $text);
 return $new_message;
 }
 add_filter('gettext', 'howdy_message', 10, 3);
+
+//remove wordpress logo on admin bar
+function annointed_admin_bar_remove() {
+        global $wp_admin_bar;
+
+        /* Remove their stuff */
+        $wp_admin_bar->remove_menu('wp-logo');
+}
+add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);

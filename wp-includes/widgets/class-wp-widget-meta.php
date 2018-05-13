@@ -26,7 +26,7 @@ class WP_Widget_Meta extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array(
 			'classname' => 'widget_meta',
-			'description' => __( 'Login, RSS, &amp; WordPress.org links.' ),
+			'description' => __( 'Login' ),
 			'customize_selective_refresh' => true,
 		);
 		parent::__construct( 'meta', __( 'Meta' ), $widget_ops );
@@ -54,7 +54,7 @@ class WP_Widget_Meta extends WP_Widget {
 		}
 			?>
 			<ul>
-			<?php wp_register(); ?>
+			<!-- <?php wp_register(); ?> -->
 			<li><?php wp_loginout(); ?></li>
 			<li><a href="<?php echo esc_url( get_bloginfo( 'rss2_url' ) ); ?>"><?php _e('Entries <abbr title="Really Simple Syndication">RSS</abbr>'); ?></a></li>
 			<li><a href="<?php echo esc_url( get_bloginfo( 'comments_rss2_url' ) ); ?>"><?php _e('Comments <abbr title="Really Simple Syndication">RSS</abbr>'); ?></a></li>
@@ -68,11 +68,11 @@ class WP_Widget_Meta extends WP_Widget {
 			 * @param string $title_text Default title text for the WordPress.org link.
 			 * @param array  $instance   Array of settings for the current widget.
 			 */
-			echo apply_filters( 'widget_meta_poweredby', sprintf( '<li><a href="%s" title="%s">%s</a></li>',
-				esc_url( __( 'https://wordpress.org/' ) ),
-				esc_attr__( 'Powered by WordPress, state-of-the-art semantic personal publishing platform.' ),
-				_x( 'WordPress.org', 'meta widget link text' )
-			), $instance );
+			// echo apply_filters( 'widget_meta_poweredby', sprintf( '<li><a href="%s" title="%s">%s</a></li>',
+			// 	esc_url( __( 'https://wordpress.org/' ) ),
+			// 	esc_attr__( 'Powered by WordPress, state-of-the-art semantic personal publishing platform.' ),
+			// 	_x( 'WordPress.org', 'meta widget link text' )
+			// ), $instance );
 
 			wp_meta();
 			?>
